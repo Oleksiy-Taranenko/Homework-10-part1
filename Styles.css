@@ -1,0 +1,128 @@
+.crazy-animal {
+    width: 400px;
+    height: 450px;
+    margin: 50px 100px;
+    border-radius: 45%;
+    background: #43b1d2;
+    position: relative;
+}
+
+.eye1 {
+    width: 80px;
+    height: 85px;
+    position: absolute;
+    margin: 100px 80px;
+    border-radius: 45%;
+    background: white;
+    position: absolute;
+}
+
+.eye2 {
+    width: 80px;
+    height: 85px;
+    position: absolute;
+    margin: 100px 240px;
+    border-radius: 45%;
+    background: white;
+    position: absolute;
+}
+
+.pupil1 {
+    width: 40px;
+    height: 45px;
+    position: absolute;
+    margin: 35px 30px;
+    border-radius: 50%;
+    background: black;
+    animation: around 2s linear infinite;
+}
+
+.pupil2 {
+    width: 40px;
+    height: 45px;
+    position: absolute;
+    margin: 35px 10px;
+    border-radius: 50%;
+    background: black;
+    animation: around 2s linear infinite;
+}
+
+@keyframes around {
+    0% {
+        left: 3px;
+        top: 0;
+    }
+
+    25% {
+        left: 2px;
+        bottom: 5px;
+    }
+
+    50% {
+        left: 1px;
+        bottom: 15px;
+    }
+
+    75% {
+        right: 1px;
+        center: 15px;
+    }
+
+    100% {
+        right: 3px;
+        top: 0;
+    }
+}
+
+.smile {
+    width: 160px;
+    height: 20px;
+    position: absolute;
+    margin: 350px 125px;
+    border-radius: 30%;
+    background: black;
+    animation: mouth 5s ease-in-out infinite;
+}
+
+@keyframes mouth {
+    10% {
+        transform: scaleY(0.5);
+    }
+
+    20% {
+        transform: scaleY(1.5);
+    }
+
+    30% {
+        transform: scaleY(0.2);
+    }
+
+    40% {
+        transform: scaleY(2.8);
+    }
+
+    50% {
+        transform: scaleY(1.0);
+    }
+
+    60% {
+        transform: scaleY(2.2);
+    }
+
+    70% {
+        transform: scaleY(0.8);
+    }
+
+    80% {
+        transform: scaleY(1.8);
+    }
+
+    90% {
+        transform: scaleY(0.4);
+    }
+
+    100% {
+        transform: scaleY(1.0);
+    }
+
+}
